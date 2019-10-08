@@ -11,11 +11,14 @@
 *.gch
 *.pch
 
+# Apple Build Results
+*.plist
+*.dSYM
+
 # Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-*.dSYM
 
 # Fortran module files
 *.mod
