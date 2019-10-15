@@ -1,0 +1,10 @@
+C++ is a compiled language, the compiler translates your code into an executable that
+can be run by the cpu.
+
+C++ is a statically typed language. This means the type of our objects is fixed at
+compile time.
+
+"Hello world" here is a string literal (a string in code)
+
+Deterministic destruction (local variables destroyed when you leave scope)
+This is probably the best feature of c++
