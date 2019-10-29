@@ -1,0 +1,4 @@
+write a program that reads 10 floats from cin. print the minimum and maximum of the entered numbers ,without storing every number that was entered.
+2. extend the program to print the mean of the entered numbers.
+3.extend the program to also print the median of the entered numbers.
+4. extend the program to print the mode of the entered numbers.
