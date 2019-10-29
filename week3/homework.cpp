@@ -4,6 +4,8 @@
 #include <map>
 #include<algorithm>
 
+// std::sort uses intro sort - look it up
+
 void mode(std::vector<float>& v){
     std::map<float, int> m;
     float mod;
@@ -23,7 +25,6 @@ void mode(std::vector<float>& v){
             mode.push_back(x.first);
         }
     }
-
 
     if (mode.size() == 1){
         std::cout << "Mode: " << mode[0] << '\n';
