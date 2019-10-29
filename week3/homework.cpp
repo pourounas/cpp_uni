@@ -15,9 +15,7 @@ void mode(std::vector<float>& v){
     int mostFrequent = 0;
 
     for(auto& x : m){
-        if (x.second >= mostFrequent){
-            mostFrequent = x.second;
-        }
+        mostFrequent = std::max(mostFrequent, x.second);
     }
 
     for(auto& x : m){
