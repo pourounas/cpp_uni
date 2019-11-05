@@ -1,0 +1,9 @@
+write a program that uses std::cin to accept a nuber of words and store them in a vector
+
+Continue reading strings until the user enters "quit".
+
+One they enter quit, then print all the string they've entered except the strings that begin with 'b'.
+
+Use apricot, banana, cherry, date and quit.
+
+The above should not print banana and quit.
