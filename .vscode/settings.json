@@ -4,5 +4,9 @@
     "files.exclude": {
         "**/.dSYM": true
     },
-    "C_Cpp.default.intelliSenseMode": "gcc-x64"
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "files.associations": {
+        "vector": "cpp"
+    },
+    "cmake.configureOnOpen": true
 }

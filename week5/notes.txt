@@ -1,0 +1,23 @@
+Auto is nice but it has caveats that you need to be aware of
+
+auto str = "Hello";
+
+If you use auto to initialize the variable str here you you will get back
+something of type const char* and not std::string. The resulting object (of type const char*) will not have all the attributes and methods you'd expect from std::string. For example, you won't be able to call .size() is .empty() on it.
+
+
+Auto also does a deep copy of the item you're iterating.
+
+Dangling reference is a form of Undefined Behaviour (UB)
+int& bad_function(int x){
+    int r = x + 5;
+    return r;
+}
+
+int main(){
+    int boom = bad_function(2); //UB
+}
+
+This might work in the beginning, but eventually it will blow up. It will eventually blow up because memory is not immediately freed-up. The contents of the address of r might continue to hold what you returned but eventually they will be freed up and when they are feed up then your program will crash.
+
+Returning an rvalue reference here won't help you either, you'd have to std::move(r) and then return the rvalue reference
